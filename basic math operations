@@ -1,0 +1,14 @@
+Ler dois números inteiros, executar e mostrar o resultado das seguintes operações: adição, subtração, multiplicação e divisão
+
+numero1 = int(input('Numero 1: '))
+numero2 = int(input('Numero 2: '))
+
+Adicao = numero1 + numero2
+subtracao = numero1 - numero2
+multriplicao = numero1 * numero2
+divisao = numero1/numero2
+
+print(Adicao)
+print(subtracao)
+print(multriplicao)
+print(divisao)
