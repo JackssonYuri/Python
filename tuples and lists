@@ -1,0 +1,18 @@
+tuple = ('a', 'b', 'c')
+
+tuple[0]
+
+tuple.index('a')
+
+
+list = ['a', 'b', 'c']
+
+list2 = list * 3
+print(list2)
+
+
+
+list.append('d')
+list.remove('d')
+
+del(list)
