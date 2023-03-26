@@ -1,5 +1,6 @@
 #fuel per km
 
+
 def ler():
     tempo = int(input("Tempo da viagem: "))
     velocidade_media = float(input("Velocidade média: "))
