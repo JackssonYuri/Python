@@ -1,0 +1,18 @@
+lista = [] #lista vazia
+
+numero = float(input())
+numero1= float(input())
+
+lista.append(numero)
+lista.append(numero1)
+
+try:
+  divisao = lista[0] / lista[1]
+except ValueError:
+  print("Digitou caractere")
+except ZeroDivisionError:
+  print("Divisão por zero")
+except IndexError:
+  print("Posição não existe")
+except KeyboardInterrupt:
+  print("Interrompeu a execução")
