@@ -1,4 +1,4 @@
-valor = int(input())
+valor = float(input())
 
 valor_centimetros = valor * 100
 valor_milimetros = valor * 1000
