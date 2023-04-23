@@ -11,6 +11,6 @@ if idade > 18:
   print('Já passou do tempo de alistamento em {} ano(s)'.format(tempo))
 elif idade == 18:
   print('Está na hora de se alistar!')
-else: 
+else:  
   tempo = 18 - idade
   print('Você ainda vai se alistar daqui {} ano(s)'.format(tempo))
