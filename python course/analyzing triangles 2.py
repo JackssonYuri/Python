@@ -12,3 +12,4 @@ if number1 < number2 + number3 and number2 < number1 + number3 and number3 < num
     print('Isósceles')
 else:
   print('Não forma triângulo')
+ 
