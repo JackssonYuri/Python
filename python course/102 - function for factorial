@@ -1,0 +1,21 @@
+#1. Criar função fatorial com dois parâmetros, o segundo como false
+#2. Caso o segundo seja True mostrar o processo de cálculo
+
+def fatorial(a = 1, b = False):
+  if b == True:
+    print(f'{a} x ', end ='')
+    for i in range(a-1, 0, -1):
+      a *= i
+      if i == 1:
+        print(f'{i} = ', end ='')
+        print(f'{a}')
+      else:
+        print(f'{i} x ', end ='')
+  elif b == False:
+    for i in range(a-1, 1, -1):
+      a *= i
+    print(a)
+      
+#5! = 5 * 4 * 3 * 2 * 1
+
+fatorial(6, False)
