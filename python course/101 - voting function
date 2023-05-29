@@ -1,0 +1,30 @@
+#1. Em que ano a pessoa nasceu
+#2. Verificado a idade dela pegando o ano atual.
+#3. A partir da idade vejo se é negado, opcional o obrigatório
+#4. A minha função vai ter retorno e com isso tenho esses resultados
+
+import datetime
+
+date = datetime.date.today()
+year = date.strftime("%Y")
+
+ano = int(year) 
+
+def voto(idade):
+  if idade < 18:
+    return 'Negado'
+  elif idade >= 18 and idade <= 65:
+    return 'Obrigatório'
+  else:
+    return 'Opcional'
+
+ano_nascimento = int(input('Em que ano você nasceu? '))
+idade = ano - ano_nascimento
+negado = voto(idade)
+
+if negado == 'Obrigatório':
+  print(f'Com {idade} anos: VOTO OBRIGATÓRIO')
+elif negado == 'Negado':
+  print(f'Com {idade} anos: VOTO NEGADO')
+elif negado == 'Opcional':
+  print(f'Com {idade} anos: VOTO OPCIONAL')
