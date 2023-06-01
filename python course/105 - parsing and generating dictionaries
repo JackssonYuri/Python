@@ -1,0 +1,42 @@
+def notas(*num, sit = False):
+    """
+    Função que mostra as notas dos alunos de uma turma
+    :param num: Notas da turma
+    :param sit: Parâmetro opcional caso a pessoa queira ver a situação de acordo com a média da turma
+    :return: Total de notas, maior e menor nota, média da turma e situação caso seja True
+    """
+    dic = {} #Criação de dicionário
+    tst = {}
+    valor = 0 #Setando como 0 o valor que vai ser retornado
+    for i in num:
+        dic['Notas'] = num #Colocando as notas no dicionário
+    maior = menor = dic['Notas'][0]
+    for i in dic['Notas']:
+        if i > maior:
+            maior = i
+        if i < menor:
+            menor = i
+    tam = len(dic['Notas'])
+
+    tst['total'] = tam
+    tst['maior'] = maior
+    tst['menor'] = menor
+    tst['média'] = (tst['maior'] + tst['menor']) / 2
+
+    if sit == True:
+        if tst['média'] > 6:
+            tst['situação'] = 'BOA'
+        elif tst['média'] >= 4 and tst['média'] <=6:
+            tst['situação'] = 'RAZOÁVEL'
+        else:
+            tst['situação'] = 'RUIM'
+
+
+    return tst #minha resp
+
+# Programa Principal
+resp = notas(5.5, 9.5, 10, 6.5, sit = True)
+resp = notas(3.5, 2, 5, sit = True)
+print(resp)
+
+help(notas)
