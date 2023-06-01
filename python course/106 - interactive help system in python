@@ -1,0 +1,21 @@
+def color(library):
+    print('\033[0;30;43m~' * 40)
+    print(f'     Acessando o manual do comando {library}        ')
+    print('~\033[0;30;43m' * 40)
+
+    print('\033[0;33;40m')
+    print(help(library))
+
+
+#Programa principal
+c = ''
+while str != 'FIM':
+    print('\033[0;33;44m~'*40)
+    print('     SISTEMA DE AJUDA PyHELP     ')
+    print('~' * 40)
+    print('\033[0;30;35m')
+    str = str(input('Função ou biblioteca -> '))
+    if str == 'FIM':
+        break
+    color(str)
+
