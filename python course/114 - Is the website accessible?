@@ -1,0 +1,9 @@
+import urllib
+import urllib.request
+site=str(input('Insira o site: '))
+try:
+    site=urllib.request.urlopen('https://www.'+site+'/')
+except urllib.request.URLError:
+    print('\033[31mO site não está acessível no momento\033[m')
+else:
+    print('\033[032mConsegui abrir o site com sucesso!\033[m')
